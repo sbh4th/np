@@ -1,0 +1,40 @@
+project:
+  title: "New Paper"
+  render:
+    - index.qmd
+  output-dir: docs
+
+site-url: https://samharper.org/np
+repo-url: https://github.com/sbh4th/np
+osf-url:
+preprint-url:
+
+format:
+  preprint-typst:
+    output-file: np.pdf
+    fontsize: 11pt
+    mainfont: Libertinus Serif
+    section-numbering: "1."
+  html:
+    toc: true
+    fontsize: 14pt
+    mainfont: Fira Sans
+    code-fold: true
+    other-links:
+      - text: Preprint
+        href: https://osf.io/jcg2z
+        icon: file-pdf
+      - text: Online supplement
+        href: https://osf.io/jcg2z
+        icon: globe2
+      - text: GitHub Repository
+        href: https://github.com/sbh4th/np
+        icon: github
+      - text: OSF Repository
+        href: https://osf.io/ypwfh/
+        icon: archive
+  preprint-docx:
+    output-file: np.docx
+
+execute:
+  freeze: auto
