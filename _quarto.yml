@@ -13,7 +13,7 @@ format:
   preprint-typst:
     output-file: np.pdf
     fontsize: 11pt
-    mainfont: Libertinus Serif
+    mainfont: New Computer Modern
     section-numbering: "1."
   html:
     toc: true
