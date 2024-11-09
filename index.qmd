@@ -18,7 +18,7 @@ keywords: [heterogeneity, uncertainty, variation, multilevel model, statistics, 
 authornote: |
   This manuscript is not yet peer-reviewed.
 bibliography: np.bib
-citeproc: true
+citeproc: false
 csl: vancouver.csl
 ---
 
@@ -65,11 +65,11 @@ theme_set(
 
 ```
 
-## Background
+# Background
 
 Let’s face it. Chocolate is delicious, and it seems impossible that it might not be good for you. However, the science is unclear, at least for some outcomes.[@chan2007]
 
-## Methods
+# Methods
 
 We recruited students who thought they were coming for training in reproducible research methods as a pre-text for eating chocolate in the morning. We measured their happiness using our established, validated index.
 
@@ -81,7 +81,7 @@ $$ {#eq-1}
 
 We also explored a model with a product term, but not because p>0.05 in the previous model. Honest.
 
-## Results
+# Results
 
 Descriptive statistics are shown in Table 1
 
@@ -141,8 +141,9 @@ marginaleffects::plot_predictions(t2i,
   condition=c("period", "treated"))
 ```
 
-## Discussion
+# Discussion
 
 We think this is convincing. But it may not matter for policy since another randomized trial showed that many participants switched groups mid-study because of their personal chocolate preferences.[@scaramuzza2015]
 
-## References
+# References
+
