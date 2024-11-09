@@ -8,7 +8,7 @@ $endif$
 $if(by-author)$
   authors: (
   $for(by-author)$
-      ( 
+      (
         name: [$it.name.literal$],
         affiliation: [$for(it.affiliations)$$it.id$$sep$, $endfor$],
         $if(it.attributes.corresponding)$corresponding: $it.attributes.corresponding$,$endif$
@@ -105,9 +105,6 @@ $if(col-gutter)$
 $endif$
 $if(bibliography-style)$
   bibliography-style: [$bibliography-style$],
-$endif$
-$if(bibliography-title)$
-  bibliography-title: [$bibliography-title$],
 $endif$
   doc,
 )

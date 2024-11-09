@@ -18,7 +18,7 @@ keywords: [heterogeneity, uncertainty, variation, multilevel model, statistics, 
 authornote: |
   This manuscript is not yet peer-reviewed.
 bibliography: np.bib
-citeproc: false
+citeproc: true
 csl: vancouver.csl
 ---
 
@@ -33,18 +33,19 @@ library(tidyverse)
 library(tinytable)
 library(modelsummary)
 library(marginaleffects)
+library(knitr)
 
 
 # Output options
 is_html <- knitr::is_html_output()
-# opts_chunk$set(
-#   eval = TRUE,
-#   cache = TRUE,
-#   warning = FALSE,
-#   error = FALSE,
-#   message = FALSE,
-#   echo = is_html
-# )
+opts_chunk$set(
+ eval = TRUE,
+ cache = TRUE,
+ warning = FALSE,
+ error = FALSE,
+ message = FALSE,
+ echo = is_html
+)
 options(digits = 2)
 options(tinytable_tt_digits = 2)
 

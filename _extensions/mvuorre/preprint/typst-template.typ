@@ -269,11 +269,11 @@
 
 }
 
+// Set table font to be sans
+#show table.cell: set text(font: "Latin Modern Sans")
+
 // Remove gridlines from tables
 #set table(
   inset: 6pt,
   stroke: none,
 )
-
-// Set table font to be sans
-#show table.cell: set text(font: "New Computer Modern Sans")

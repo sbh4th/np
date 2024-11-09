@@ -22,7 +22,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="index_files/libs/clipboard/clipboard.min.js"></script>
@@ -132,7 +151,7 @@ window.Quarto = {
 
 <section id="background" class="level1">
 <h1>Background</h1>
-<p>Let’s face it. Chocolate is delicious, and it seems impossible that it might not be good for you. However, the science is unclear, at least for some outcomes.<span class="citation" data-cites="chan2007">[@chan2007]</span></p>
+<p>Let’s face it. Chocolate is delicious, and it seems impossible that it might not be good for you. However, the science is unclear, at least for some outcomes.<span class="citation" data-cites="chan2007">(<a href="#ref-chan2007" role="doc-biblioref">1</a>)</span></p>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
@@ -151,12 +170,12 @@ y_{it}=\beta_{0} + \beta_{1}*Treated + \beta_{2}*Period + \epsilon_{it}
 <!-- preamble start -->
 
     <script>
-      function styleCell_ftybufbvjupxgnqdm1zb(i, j, css_id) {
-        var table = document.getElementById("tinytable_ftybufbvjupxgnqdm1zb");
+      function styleCell_dxhuqng66a75d5rdnisn(i, j, css_id) {
+        var table = document.getElementById("tinytable_dxhuqng66a75d5rdnisn");
         table.rows[i].cells[j].classList.add(css_id);
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_ftybufbvjupxgnqdm1zb');
+        var table = document.getElementById('tinytable_dxhuqng66a75d5rdnisn');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -164,8 +183,8 @@ y_{it}=\beta_{0} + \beta_{1}*Treated + \beta_{2}*Period + \epsilon_{it}
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_ftybufbvjupxgnqdm1zb(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_ftybufbvjupxgnqdm1zb");
+      function spanCell_dxhuqng66a75d5rdnisn(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_dxhuqng66a75d5rdnisn");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -191,20 +210,20 @@ y_{it}=\beta_{0} + \beta_{1}*Treated + \beta_{2}*Period + \epsilon_{it}
         targetCell.rowSpan = rowspan;
         targetCell.colSpan = colspan;
       }
-window.addEventListener('load', function () { spanCell_ftybufbvjupxgnqdm1zb(1, 0, 2, 1) })
-window.addEventListener('load', function () { spanCell_ftybufbvjupxgnqdm1zb(3, 0, 2, 1) })
-window.addEventListener('load', function () { spanCell_ftybufbvjupxgnqdm1zb(5, 0, 2, 1) })
-window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 0, 'tinytable_css_id4x5z97qeent4pe31dx70') })
-window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 1, 'tinytable_css_id4x5z97qeent4pe31dx70') })
-window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 2, 'tinytable_css_id4x5z97qeent4pe31dx70') })
-window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 3, 'tinytable_css_id4x5z97qeent4pe31dx70') })
+window.addEventListener('load', function () { spanCell_dxhuqng66a75d5rdnisn(1, 0, 2, 1) })
+window.addEventListener('load', function () { spanCell_dxhuqng66a75d5rdnisn(3, 0, 2, 1) })
+window.addEventListener('load', function () { spanCell_dxhuqng66a75d5rdnisn(5, 0, 2, 1) })
+window.addEventListener('load', function () { styleCell_dxhuqng66a75d5rdnisn(0, 0, 'tinytable_css_idlhge8vgq6j32w4kwl09b') })
+window.addEventListener('load', function () { styleCell_dxhuqng66a75d5rdnisn(0, 1, 'tinytable_css_idlhge8vgq6j32w4kwl09b') })
+window.addEventListener('load', function () { styleCell_dxhuqng66a75d5rdnisn(0, 2, 'tinytable_css_idlhge8vgq6j32w4kwl09b') })
+window.addEventListener('load', function () { styleCell_dxhuqng66a75d5rdnisn(0, 3, 'tinytable_css_idlhge8vgq6j32w4kwl09b') })
     </script>
 
     <style>
-    .table td.tinytable_css_id4x5z97qeent4pe31dx70, .table th.tinytable_css_id4x5z97qeent4pe31dx70 {  border-bottom: solid 0.1em #d3d8dc; }
+    .table td.tinytable_css_idlhge8vgq6j32w4kwl09b, .table th.tinytable_css_idlhge8vgq6j32w4kwl09b {  border-bottom: solid 0.1em #d3d8dc; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_ftybufbvjupxgnqdm1zb" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true"><caption><p>Mean happiness by treatment and time</p></caption>
+      <table class="table table-borderless" id="tinytable_dxhuqng66a75d5rdnisn" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true"><caption><p>Mean happiness by treatment and time</p></caption>
         <thead>
         
               <tr>
@@ -264,12 +283,12 @@ window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 
 <!-- preamble start -->
 
     <script>
-      function styleCell_4l3ej4dr0g1ky6oz0lwe(i, j, css_id) {
-        var table = document.getElementById("tinytable_4l3ej4dr0g1ky6oz0lwe");
+      function styleCell_q7gfr4ys8fdkfvsa4d54(i, j, css_id) {
+        var table = document.getElementById("tinytable_q7gfr4ys8fdkfvsa4d54");
         table.rows[i].cells[j].classList.add(css_id);
       }
       function insertSpanRow(i, colspan, content) {
-        var table = document.getElementById('tinytable_4l3ej4dr0g1ky6oz0lwe');
+        var table = document.getElementById('tinytable_q7gfr4ys8fdkfvsa4d54');
         var newRow = table.insertRow(i);
         var newCell = newRow.insertCell(0);
         newCell.setAttribute("colspan", colspan);
@@ -277,8 +296,8 @@ window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 
         // this may be unsafe, but innerText does not interpret <br>
         newCell.innerHTML = content;
       }
-      function spanCell_4l3ej4dr0g1ky6oz0lwe(i, j, rowspan, colspan) {
-        var table = document.getElementById("tinytable_4l3ej4dr0g1ky6oz0lwe");
+      function spanCell_q7gfr4ys8fdkfvsa4d54(i, j, rowspan, colspan) {
+        var table = document.getElementById("tinytable_q7gfr4ys8fdkfvsa4d54");
         const targetRow = table.rows[i];
         const targetCell = targetRow.cells[j];
         for (let r = 0; r < rowspan; r++) {
@@ -304,78 +323,78 @@ window.addEventListener('load', function () { styleCell_ftybufbvjupxgnqdm1zb(0, 
         targetCell.rowSpan = rowspan;
         targetCell.colSpan = colspan;
       }
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(0, 0, 'tinytable_css_idyw5udcbzrnfhhkfpgkzf') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(0, 1, 'tinytable_css_idgmg22mpjxuu0kmen6o7s') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(0, 2, 'tinytable_css_idgmg22mpjxuu0kmen6o7s') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(1, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(1, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(1, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(2, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(2, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(2, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(3, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(3, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(3, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(4, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(4, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(4, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(5, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(5, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(5, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(6, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(6, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(6, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(7, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(7, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(7, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(8, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(8, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(8, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(9, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(9, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(9, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(10, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(10, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(10, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(11, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(11, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(11, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(12, 0, 'tinytable_css_idmfqctvfd0u8gcxvem2nk') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(12, 1, 'tinytable_css_id66vj38m61anxsjxxeyql') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(12, 2, 'tinytable_css_id66vj38m61anxsjxxeyql') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(13, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(13, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(13, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(14, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(14, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(14, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(15, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(15, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(15, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(16, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(16, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(16, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(17, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(17, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(17, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(18, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(18, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(18, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(19, 0, 'tinytable_css_idylj0srqrgb1wubvlw4k8') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(19, 1, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
-window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(19, 2, 'tinytable_css_id0op0wgqewxazjl3wvig0') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(0, 0, 'tinytable_css_idxy0a36knlrzbco6fk3iy') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(0, 1, 'tinytable_css_idwyftvxxv0d7ke73rz6sy') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(0, 2, 'tinytable_css_idwyftvxxv0d7ke73rz6sy') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(1, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(1, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(1, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(2, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(2, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(2, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(3, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(3, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(3, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(4, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(4, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(4, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(5, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(5, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(5, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(6, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(6, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(6, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(7, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(7, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(7, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(8, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(8, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(8, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(9, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(9, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(9, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(10, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(10, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(10, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(11, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(11, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(11, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(12, 0, 'tinytable_css_idhn4pvpwkn9rgetptqmyf') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(12, 1, 'tinytable_css_idg13hbc7nmuw24vascd5w') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(12, 2, 'tinytable_css_idg13hbc7nmuw24vascd5w') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(13, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(13, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(13, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(14, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(14, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(14, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(15, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(15, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(15, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(16, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(16, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(16, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(17, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(17, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(17, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(18, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(18, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(18, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(19, 0, 'tinytable_css_idhl1b9wzpah1lqgdjslo1') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(19, 1, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
+window.addEventListener('load', function () { styleCell_q7gfr4ys8fdkfvsa4d54(19, 2, 'tinytable_css_idaaj9yyl1uzjzenb4c8p2') })
     </script>
 
     <style>
-    .table td.tinytable_css_idyw5udcbzrnfhhkfpgkzf, .table th.tinytable_css_idyw5udcbzrnfhhkfpgkzf {  text-align: left;  border-bottom: solid 0.1em #d3d8dc; }
-    .table td.tinytable_css_idgmg22mpjxuu0kmen6o7s, .table th.tinytable_css_idgmg22mpjxuu0kmen6o7s {  text-align: center;  border-bottom: solid 0.1em #d3d8dc; }
-    .table td.tinytable_css_idylj0srqrgb1wubvlw4k8, .table th.tinytable_css_idylj0srqrgb1wubvlw4k8 {  text-align: left; }
-    .table td.tinytable_css_id0op0wgqewxazjl3wvig0, .table th.tinytable_css_id0op0wgqewxazjl3wvig0 {  text-align: center; }
-    .table td.tinytable_css_idmfqctvfd0u8gcxvem2nk, .table th.tinytable_css_idmfqctvfd0u8gcxvem2nk {  border-bottom: solid 0.05em black;  text-align: left; }
-    .table td.tinytable_css_id66vj38m61anxsjxxeyql, .table th.tinytable_css_id66vj38m61anxsjxxeyql {  border-bottom: solid 0.05em black;  text-align: center; }
+    .table td.tinytable_css_idxy0a36knlrzbco6fk3iy, .table th.tinytable_css_idxy0a36knlrzbco6fk3iy {  text-align: left;  border-bottom: solid 0.1em #d3d8dc; }
+    .table td.tinytable_css_idwyftvxxv0d7ke73rz6sy, .table th.tinytable_css_idwyftvxxv0d7ke73rz6sy {  text-align: center;  border-bottom: solid 0.1em #d3d8dc; }
+    .table td.tinytable_css_idhl1b9wzpah1lqgdjslo1, .table th.tinytable_css_idhl1b9wzpah1lqgdjslo1 {  text-align: left; }
+    .table td.tinytable_css_idaaj9yyl1uzjzenb4c8p2, .table th.tinytable_css_idaaj9yyl1uzjzenb4c8p2 {  text-align: center; }
+    .table td.tinytable_css_idhn4pvpwkn9rgetptqmyf, .table th.tinytable_css_idhn4pvpwkn9rgetptqmyf {  border-bottom: solid 0.05em black;  text-align: left; }
+    .table td.tinytable_css_idg13hbc7nmuw24vascd5w, .table th.tinytable_css_idg13hbc7nmuw24vascd5w {  border-bottom: solid 0.05em black;  text-align: center; }
     </style>
     <div class="container">
-      <table class="table table-borderless" id="tinytable_4l3ej4dr0g1ky6oz0lwe" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true"><caption><p>Regression results</p></caption>
+      <table class="table table-borderless" id="tinytable_q7gfr4ys8fdkfvsa4d54" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true"><caption><p>Regression results</p></caption>
         <thead>
         
               <tr>
@@ -501,13 +520,21 @@ window.addEventListener('load', function () { styleCell_4l3ej4dr0g1ky6oz0lwe(19,
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
-<p>We think this is convincing. But it may not matter for policy since another randomized trial showed that many participants switched groups mid-study because of their personal chocolate preferences.<span class="citation" data-cites="scaramuzza2015">[@scaramuzza2015]</span></p>
+<p>We think this is convincing. But it may not matter for policy since another randomized trial showed that many participants switched groups mid-study because of their personal chocolate preferences.<span class="citation" data-cites="scaramuzza2015">(<a href="#ref-scaramuzza2015" role="doc-biblioref">2</a>)</span></p>
 </section>
-<section id="references" class="level1">
-<h1>References</h1>
+<section id="references" class="level1 unnumbered">
+
+
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-chan2007" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Chan K. A clinical trial gone awry: The <span>Chocolate Happiness Undergoing More Pleasantness</span> (<span>CHUMP</span>) study. Canadian Medical Association Journal [Internet]. 2007 Dec 4 [cited 2024 Nov 8];177(12):1539–41. Available from: <a href="http://www.cmaj.ca/cgi/doi/10.1503/cmaj.071161">http://www.cmaj.ca/cgi/doi/10.1503/cmaj.071161</a></div>
+</div>
+<div id="ref-scaramuzza2015" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Scaramuzza AE, Zuccotti GV. Dark chocolate consumption and lower <span>HbA1c</span> in children with diabetes: <span>Direct</span> cause or pure happiness? Clinical Nutrition [Internet]. 2015 Apr [cited 2024 Nov 8];34(2):333–4. Available from: <a href="https://linkinghub.elsevier.com/retrieve/pii/S0261561415000138">https://linkinghub.elsevier.com/retrieve/pii/S0261561415000138</a></div>
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
