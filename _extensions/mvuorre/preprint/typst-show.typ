@@ -106,5 +106,8 @@ $endif$
 $if(bibliography-style)$
   bibliography-style: [$bibliography-style$],
 $endif$
+$if(bibliography-title)$
+  bibliography-title: [$bibliography-title$],
+$endif$
   doc,
 )

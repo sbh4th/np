@@ -19,7 +19,7 @@ authornote: |
   This manuscript is not yet peer-reviewed.
 bibliography: np.bib
 citeproc: true
-csl: vancouver.csl
+csl: apa.csl
 ---
 
 
