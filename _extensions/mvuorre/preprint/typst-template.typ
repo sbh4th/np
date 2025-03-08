@@ -270,7 +270,7 @@
 }
 
 // Set table font to be sans
-#show table.cell: set text(font: "Latin Modern Sans")
+// #show table.cell: set text(font: "Latin Modern Sans")
 
 // Remove gridlines from tables
 #set table(

@@ -13,7 +13,8 @@ format:
   preprint-typst:
     output-file: np.pdf
     fontsize: 11pt
-    mainfont: Nimbus Roman No9 L
+    mainfont: C059
+    font-paths: fonts
     section-numbering: "1."
   html:
     toc: true
